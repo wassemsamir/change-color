@@ -1,73 +1,99 @@
+/* #c0392b  #16a085  #8e44ad  #2c3e50 */
+
 *{
     box-sizing: border-box;
 }
 body{
-    font-family: "open sans";
-    font-size: 18px;
-  
+    margin:50px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
 }
 
 .container{
-    margin:20px auto;
-    width: 1200px;
+    margin: 20px auto;
+    width: 80%;
+    
 }
 .container .color-swither{
-    list-style: none;
-    margin-bottom: 20px;
     text-align: center;
+    margin-bottom: 20px ;
 }
 .container .color-swither li{
+    list-style-type: none;
+    height: 20px;
     width: 20px;
-    height:20px;
-    cursor: pointer;
+    cursor:pointer;
     display: inline-block;
+    
+    
 }
+
 .container .color-swither li:first-child{
-    background-color: #c0392b;
+    background-color:#c0392b
 }
 .container .color-swither li:nth-child(2){
     background-color: #16a085;
 }
+
 .container .color-swither li:nth-child(3){
     background-color: #8e44ad;
+}
+.container .color-swither li:nth-child(4){
+    background-color: #ad7344;
+}
+.container .color-swither li:nth-child(5){
+    background-color: #9aad44;
 }
 .container .color-swither li:last-child{
     background-color: #2c3e50;
 }
 
-
 .red .container h3{
     color: #c0392b;
 }
 .red .container div{
-    background-color: #c0392b;
-    padding: 20px;
-    color: #fff;
-}
-.green .container h3{
-    color: #16a085;
-}
-.green .container div{
-    background-color: #16a085;
-    padding: 20px;
-    color: #fff;
-    
+    background-color:#c0392b;
+    padding:30px;
+    color:#fff
 }
 .blue .container h3{
-    color: #8e44ad;
+    color: #16a085;
 }
 .blue .container div{
-    background-color: #8e44ad;
-    padding: 20px;
-    color: #fff;
-   
+    background-color:#16a085;
+    padding:30px;
+    color:#fff
+}
+
+.green .container h3{
+    color: #8e44ad;
+}
+.green .container div{
+    background-color:#8e44ad;
+    padding:30px;
+    color:#fff
+}
+.yellow .container h3{
+    color: #9aad44;
+}
+.yellow .container div{
+    background-color:#9aad44;
+    padding:30px;
+    color:#fff
+}
+.orange .container h3{
+    color: #ad7344;
+}
+.orange .container div{
+    background-color:#ad7344;
+    padding:30px;
+    color:#fff
 }
 .black .container h3{
     color: #2c3e50;
 }
 .black .container div{
-    background-color: #2c3e50;
-    padding: 20px;
-    color: #fff;
-  
+    background-color:#2c3e50;
+    padding:30px;
+    color:#fff
 }
