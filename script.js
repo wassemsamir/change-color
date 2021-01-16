@@ -38,3 +38,29 @@ function textConvert(string){
     return newArray.join(" ")
 }
 console.log(textConvert("i love javascript and pyhton"));
+
+
+// funcation to site number of letters in textarea 
+
+//declare the  variables  
+// declare count variable 
+var $count = document.getElementById('count'),
+    //declare textarea 
+    $textArea = document.getElementById('text'),
+    // declare maxlegnth 
+    $maxLength = $textArea.getAttribute('maxLength')
+
+// text input function 
+$textArea.oninput = function(){
+    // count the nubmer of text in the text area 
+    $count.innerHTML = $maxLength - this.value.length
+    // style the count number 
+    if($count.innerHTML <=10 ){
+        $count.classList.remove("sct")
+        $count.classList.add('st')
+    }else{
+
+        $count.classList.add('sct')
+    }
+}
+
